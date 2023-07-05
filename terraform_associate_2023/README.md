@@ -27,10 +27,11 @@ There are more IDE's like ATOM or sublime too.
    1. `terraform init`
    2. `terraform plan`
    3. `terraform apply`
-   4. `terraform destroy` - (optional) when you want to destroy your resources
+   4. `terraform destroy` - (optional) when you want to destroy all your resources
 
 6. Your ec2 instance should be created now (wait for it to be created and in running stage to verify in aws EC2 dashboard)
-7. 
+7. `terraform destroy -target github_repository.example`  is an example to destroy github resource
+8. 
 
 
 
@@ -51,4 +52,6 @@ There are more IDE's like ATOM or sublime too.
 4. There are 3 types of providers as official (HashiCorp), Partner (HashiCorp Partner) and community (Individual Contributors)
 5. Provider namespaces - Namespaces are used to help users identify the organization or publisher responsible for the integration,
 6. Terraform requires explicit source information for any providers that are not HashiCorp-maintained, using a new syntax in the required_providers nested block inside the terraform configuration block,
-7. 
+7. The -target option can be used to focus Terraform's attention on only a subset of resources,
+8. If the resource code is commented out, terraform asumes that resource is not longer needed and it will try to destroy that resource (if the resource was already created), **(try running terraform destroy command two times without changing the resource configuration)**
+9. 
