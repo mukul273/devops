@@ -28,3 +28,4 @@
 *.hcl
 *.backup
 terraform_beginner/.terraform
+/.terraform/*
