@@ -16,6 +16,8 @@ Configuration management tools can be used for infrastructure provisioning as we
 
 [Install Terraform](https://developer.hashicorp.com/terraform/downloads)
 
+[Terraform documentation](https://registry.terraform.io/)
+
 HashiCorp also provides extension for Terraform for Visual Studio Code. So please consider using IDE like Visual Studio Code.  
 There are more IDE's like ATOM or sublime too.  
 
@@ -30,7 +32,7 @@ There are more IDE's like ATOM or sublime too.
    4. `terraform destroy` - (optional) when you want to destroy all your resources
 
 6. Your ec2 instance should be created now (wait for it to be created and in running stage to verify in aws EC2 dashboard)
-7. `terraform destroy -target github_repository.example`  is an example to destroy github resource
+7. `terraform destroy -target github_repository.example`  is an example to destroy specific github resource
 8. 
 
 
@@ -54,4 +56,7 @@ There are more IDE's like ATOM or sublime too.
 6. Terraform requires explicit source information for any providers that are not HashiCorp-maintained, using a new syntax in the required_providers nested block inside the terraform configuration block,
 7. The -target option can be used to focus Terraform's attention on only a subset of resources,
 8. If the resource code is commented out, terraform asumes that resource is not longer needed and it will try to destroy that resource (if the resource was already created), **(try running terraform destroy command two times without changing the resource configuration)**
-9. 
+9. Terraform tries to ensure that the deployed infrastructure is based on the desired state. If there is a difference between the two, terraform plan presents a description of the
+changes necessary to achieve the desired state,
+10. ![Provider version number args](provider_version_number_args.png)
+11. 
