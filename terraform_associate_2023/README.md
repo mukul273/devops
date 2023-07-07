@@ -59,4 +59,13 @@ There are more IDE's like ATOM or sublime too.
 9. Terraform tries to ensure that the deployed infrastructure is based on the desired state. If there is a difference between the two, terraform plan presents a description of the
 changes necessary to achieve the desired state,
 10. ![Provider version number args](provider_version_number_args.png)
-11. 
+11. If we change the actual resource configuration manually on the server, the we need to run `terraform refresh` command to refresh the tfstate file so that the current configuration is reflected in the tfstate, (**Be careful before using this command, may lead to confusing state**)
+12. It's important to know that upgrading the provide plugin version can be done via `terraform init -upgrade` command, this will download the latest version for that provider plugin,
+13. `terraform apply -auto-approve` command is used for quick resource creation, (this command skips the approval and straght goes and creates the resources)
+14. **Do not hardcode the authentication credentials in tf files**,
+15. use cli (for e.g. awscli) to set the authentication credential,
+16. Follow below to configure authentication credentials:
+17. run `aws configure` -> prompts you to enter aws access key, secret access key, region(optional),
+18. When terraform apply runs, the current state of resource is fetched (if already created) and terraform matches to the Terraform configuration and if required the update/create process happens,
+19. **Resource configuration represents desired state in Terraform**
+20. 
