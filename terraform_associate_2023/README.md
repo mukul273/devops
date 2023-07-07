@@ -33,10 +33,9 @@ There are more IDE's like ATOM or sublime too.
 
 6. Your ec2 instance should be created now (wait for it to be created and in running stage to verify in aws EC2 dashboard)
 7. `terraform destroy -target github_repository.example`  is an example to destroy specific github resource
-8. 
-
-
-
+   
+## Read, Generate and Modify Configurations
+1. [Read, Generate, Modify](/terraform_associate_2023/Read_generate_modify_conf/)
 
 
 
