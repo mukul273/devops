@@ -29,4 +29,4 @@ different resource,
     1. setx TF_VAR_instancetype t2.large (Windows)
     2. export TF_VAR_instancetype="t2.nano"
        echo $TF_VAR (Linux/Mac)
-11. Fetching data from maps and list: Please refer [this](./)
+11. Fetching data from maps and list: Please refer [this](./fetch-values-variables.tf)
