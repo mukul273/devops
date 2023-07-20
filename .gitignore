@@ -31,3 +31,4 @@ terraform_beginner/.terraform
 /.terraform/*
 *.tfstate*
 *.log
+*._tf
