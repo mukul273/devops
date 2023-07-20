@@ -33,4 +33,5 @@ different resource,
 12. **Count Parameter and Index**:
     1. under resource we can mention count and the terraform will spin up those many resources for us, Please refer [this](./count-paremeter.tf)
     2. count.index — The distinct index number (starting with 0) corresponding to this instance. See [this](./count-index.tf) example, another version [here](./count-index_v1.tf)
-    3. 
+13. **Conditional Expressions**:
+    1. A conditional expression uses the value of a bool expression to select one of two values. See [this](./conditional.tf) example
