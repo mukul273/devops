@@ -35,3 +35,9 @@ different resource,
     2. count.index — The distinct index number (starting with 0) corresponding to this instance. See [this](./count-index.tf) example, another version [here](./count-index_v1.tf)
 13. **Conditional Expressions**:
     1. A conditional expression uses the value of a bool expression to select one of two values. See [this](./conditional.tf) example
+
+14. **Local Values**: A local value assigns a name to an expression, allowing it to be used multiple times within a module without repeating it. For e.g. see [this](./localvarsdemo.tf)
+    1. Local Values can be used for multiple different use-cases like having a conditional expression. For e.g. see ![example](./local_expression_support.png) 
+    2. Local values can be helpful to avoid repeating the same values or expressions multiple times in a configuration.
+    3. If overused they can also make a configuration hard to read by future maintainers by hiding the actual values used Use local values only in moderation, in situations where a single value or result is used in many places and that value is likely to be changed in future.
+15. 
