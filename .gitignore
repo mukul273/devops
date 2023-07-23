@@ -32,3 +32,4 @@ terraform_beginner/.terraform
 *.tfstate*
 *.log
 *._tf
+terraform_associate_2023/Read_generate_modify_conf/github_rsa

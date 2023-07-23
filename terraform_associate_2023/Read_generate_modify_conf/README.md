@@ -17,10 +17,10 @@ different resource,
 9. **Data Types**:
    1. The type argument in a variable block allows you to restrict the type of value that will be accepted as the value for a variable for e.g
 
-    ```text
-    variable "image_id" {
-      type = string  
-   }
+   ```text
+      variable "image_id" {
+         type = string  
+      }
    ```
 
    2. String, list, map, number are the data types,
@@ -36,8 +36,24 @@ different resource,
 13. **Conditional Expressions**:
     1. A conditional expression uses the value of a bool expression to select one of two values. See [this](./conditional.tf) example
 
-14. **Local Values**: A local value assigns a name to an expression, allowing it to be used multiple times within a module without repeating it. For e.g. see [this](./localvarsdemo.tf)
-    1. Local Values can be used for multiple different use-cases like having a conditional expression. For e.g. see ![example](./local_expression_support.png) 
-    2. Local values can be helpful to avoid repeating the same values or expressions multiple times in a configuration.
-    3. If overused they can also make a configuration hard to read by future maintainers by hiding the actual values used Use local values only in moderation, in situations where a single value or result is used in many places and that value is likely to be changed in future.
-15. 
+14. **Local Values**: A local value assigns a name to an expression, allowing it to be used multiple times within a module without repeating it. For e.g. see [this](./localvarsdemo.tf) file,
+    1. Local Values can be used for multiple different use-cases like having a conditional expression. For e.g. see ![example](./local_expression_support.png),
+    2. Local values can be helpful to avoid repeating the same values or expressions multiple times in a configuration,
+    3. If overused they can also make a configuration hard to read by future maintainers by hiding the actual values used Use local values only in moderation, in situations where a single value or result is used in many places and that value is likely to be changed in future,
+15. **Functions**: [built-in functions](https://developer.hashicorp.com/terraform/language/functions) that you can use to transform and combine values
+    1. Terraform language does not support user-defined functions, and so only the functions built in to the language are available for use
+        1. Numeric
+        2. String
+        3. Collection
+        4. Encoding
+        5. Filesystem
+        6. Date and Time
+        7. Hash and Crypto
+        8. IP Network
+        9. Type Conversion
+
+   2. Please refer [this]() file
+16.
+
+
+
