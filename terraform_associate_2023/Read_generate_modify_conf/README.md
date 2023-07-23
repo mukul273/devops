@@ -52,7 +52,7 @@ different resource,
         8. IP Network
         9. Type Conversion
 
-   2. Please refer [this]() file
+   2. Please refer [this](./functions.tf) file
 16.
 
 
