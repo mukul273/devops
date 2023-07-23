@@ -42,6 +42,7 @@ different resource,
     3. If overused they can also make a configuration hard to read by future maintainers by hiding the actual values used Use local values only in moderation, in situations where a single value or result is used in many places and that value is likely to be changed in future,
 15. **Functions**: [built-in functions](https://developer.hashicorp.com/terraform/language/functions) that you can use to transform and combine values
     1. Terraform language does not support user-defined functions, and so only the functions built in to the language are available for use
+    2. Please refer [this](./functions.tf) file
         1. Numeric
         2. String
         3. Collection
@@ -50,10 +51,8 @@ different resource,
         6. Date and Time
         7. Hash and Crypto
         8. IP Network
-        9. Type Conversion
-
-   2. Please refer [this](./functions.tf) file
-16.
-
-
-
+        9. Type Conversion 
+16. **Data sources**: allow data to be fetched or computed for use elsewhere in Terraform configuration. Please refer [this](./datasources.tf) file. If you need to find more details related to options that can be used in filters, you can refer to the following AWS documentation: 
+https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html
+Refer to the --filters option
+17. 
