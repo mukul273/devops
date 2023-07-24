@@ -67,4 +67,5 @@ changes necessary to achieve the desired state,
 17. run `aws configure` -> prompts you to enter aws access key, secret access key, region(optional),
 18. When terraform apply runs, the current state of resource is fetched (if already created) and terraform matches to the Terraform configuration and if required the update/create process happens,
 19. **Resource configuration represents desired state in Terraform**
-20. 
+20. **Debugging Terraform**: Terraform has detailed logs which can be enabled by setting the TF_LOG environment variable to any value For e.g. TRACE, DEBUG, INFO, WARN or ERROR
+21. 
