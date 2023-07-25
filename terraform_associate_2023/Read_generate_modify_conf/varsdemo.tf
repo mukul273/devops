@@ -1,5 +1,5 @@
 resource "aws_security_group" "var_demo" {
-  name        = "demo-variables"
+  name = "demo-variables"
 
   ingress {
     from_port   = 443

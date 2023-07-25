@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_eip" "lb" {
-  domain   = "vpc"
+  domain = "vpc"
 }
 
 resource "aws_security_group" "allow_tls" {
@@ -12,11 +12,11 @@ resource "aws_security_group" "allow_tls" {
 
 
   ingress {
-    description      = "TLS from VPC"
-    from_port        = 443
-    to_port          = 443
-    protocol         = "tcp"
-    cidr_blocks      = ["${aws_eip.lb.public_ip}/32"]
+    description = "TLS from VPC"
+    from_port   = 443
+    to_port     = 443
+    protocol    = "tcp"
+    cidr_blocks = ["${aws_eip.lb.public_ip}/32"]
   }
 
   egress {

@@ -1,10 +1,10 @@
 provider "aws" {
-  region     = "us-east-1"
+  region = "us-east-1"
 }
 
 data "aws_ami" "app_ami" {
   most_recent = true
-  owners = ["amazon"]
+  owners      = ["amazon"]
 
 
   filter {
@@ -14,6 +14,6 @@ data "aws_ami" "app_ami" {
 }
 
 resource "aws_instance" "instance-1" {
-    ami = data.aws_ami.app_ami.id
-   instance_type = "t2.micro"
+  ami           = data.aws_ami.app_ami.id
+  instance_type = "t2.micro"
 }

@@ -3,6 +3,6 @@ provider "aws" {
 }
 
 resource "aws_iam_user" "lb" {
-   count = 3
-   name = "loadbalancer.${count.index}"
+  count = 3
+  name  = "loadbalancer.${count.index}"
 }

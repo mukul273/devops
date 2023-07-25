@@ -3,11 +3,11 @@ provider "aws" {
 }
 
 variable "elb_names" {
-  type = list
+  type = list(any)
 }
 
 resource "aws_iam_user" "lb" {
-  name = var.elb_names[count.index]
+  name  = var.elb_names[count.index]
   count = 3
-  path = "/system/"
+  path  = "/system/"
 }
