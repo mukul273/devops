@@ -68,4 +68,9 @@ changes necessary to achieve the desired state,
 18. When terraform apply runs, the current state of resource is fetched (if already created) and terraform matches to the Terraform configuration and if required the update/create process happens,
 19. **Resource configuration represents desired state in Terraform**
 20. **Debugging Terraform**: Terraform has detailed logs which can be enabled by setting the TF_LOG environment variable to any value For e.g. TRACE, DEBUG, INFO, WARN or ERROR
-21. 
+21. Try ```export TF_LOG_PATH=/tmp/crash.log``` and ```export TF_LOG=TRACE``` for log tracing
+22. Try ```terraform fmt``` to format the terraform file,
+23. Try ```terraform validate``` to validate the configuration is syntactically valid, It checks for unsupported args, undeclared vars etc, **```terraform plan``` also runs the ```terraform validate``` in the background first**
+24. **Terraform always loads the configuration in alphabetical order**
+25. **Terraform files have to be in .tf or .tf.json extension**
+26. 
