@@ -55,4 +55,7 @@ different resource,
 16. **Data sources**: allow data to be fetched or computed for use elsewhere in Terraform configuration. Please refer [this](./datasources.tf) file. If you need to find more details related to options that can be used in filters, you can refer to the following AWS documentation: 
 https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html
 Refer to the --filters option
-    
+17. **Dynamic Blocks**: Dynamic Block allows us to dynamically construct repeatable nested blocks which is supported inside resource, data, provider, and provisioner blocks
+    1. a [raw resource file](./raw_dynamic_block.tf) could quickly become very complicated and diffuclt to maintain,
+    2. This problem could be solved by [dynamic blocks]()
+18. 
