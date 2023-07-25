@@ -57,5 +57,7 @@ https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html
 Refer to the --filters option
 17. **Dynamic Blocks**: Dynamic Block allows us to dynamically construct repeatable nested blocks which is supported inside resource, data, provider, and provisioner blocks
     1. a [raw resource file](./raw_dynamic_block.tf) could quickly become very complicated and diffuclt to maintain,
-    2. This problem could be solved by [dynamic blocks]()
-18. 
+    2. This problem could be solved by [dynamic blocks](./dynamic_block.tf)
+18. If we use ```terraform apply -replace="aws_instance.{resource}``` then the terraform takes care of taint functionality offered by terraform, {resource} to be replaced with actual resource name, ```terraform taint``` can be used in older terraform versions,
+19. **Splat Expression**: allows us to get a list of all the attributes, see [this](splat.tf) file
+20. 
