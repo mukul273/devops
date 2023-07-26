@@ -64,3 +64,5 @@ Refer to the --filters option
 configuration or execution plan, output of terraform graph is in the DOT format, which can easily be converted to an image, Please see [this dot file](./graph.tf) and [this file](./graph.dot)] for visual graph. Please remember to install graphviz extension for dot files preview in vscode,
 21. **Saving the terraform plan to a file**: ```terraform plan -out={to be replaced with path}```, For e.g. ```terraform plan -out=demopath```, this will create a demopath file and then you can ```terraform apply demopath``` on it so that saved plan can be applied,
 22. ```terraform output``` command is used to extract the value of an output variable from the state file, for e.g. ```terraform output iam_names```
+23. Please refer [this](./terraform_settings_demo.tf) for terraform settings description,
+24. 
