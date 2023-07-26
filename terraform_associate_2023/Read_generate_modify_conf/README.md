@@ -60,4 +60,6 @@ Refer to the --filters option
     2. This problem could be solved by [dynamic blocks](./dynamic_block.tf)
 18. If we use ```terraform apply -replace="aws_instance.{resource}``` then the terraform takes care of taint functionality offered by terraform, {resource} to be replaced with actual resource name, ```terraform taint``` can be used in older terraform versions,
 19. **Splat Expression**: allows us to get a list of all the attributes, see [this](splat.tf) file
-20. 
+20. ```terraform graph```: command is used to generate a visual representation of either a
+configuration or execution plan, output of terraform graph is in the DOT format, which can easily be converted to an image, Please see [this dot file](./graph.tf) and [this file](./graph.dot)] for visual graph. Please remember to install graphviz extension for dot files preview in vscode,
+21. 
