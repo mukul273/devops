@@ -17,7 +17,7 @@ different resource,
 9. **Data Types**:
    1. The type argument in a variable block allows you to restrict the type of value that will be accepted as the value for a variable for e.g
 
-   ```text
+    ```text
       variable "image_id" {
          type = string  
       }
@@ -50,10 +50,10 @@ different resource,
        6. Date and Time
        7. Hash and Crypto
        8. IP Network
-       9. Type Conversion 
+       9. Type Conversion
     2. Please refer [this](./functions.tf) file
 16. **Data sources**: allow data to be fetched or computed for use elsewhere in Terraform configuration. Please refer [this](./datasources.tf) file. If you need to find more details related to options that can be used in filters, you can refer to the following AWS documentation:
-https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html
+<https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html>
 Refer to the --filters option
 17. **Dynamic Blocks**: Dynamic Block allows us to dynamically construct repeatable nested blocks which is supported inside resource, data, provider, and provisioner blocks
     1. a [raw resource file](./raw_dynamic_block.tf) could quickly become very complicated and diffuclt to maintain,
@@ -69,4 +69,11 @@ configuration or execution plan, output of terraform graph is in the DOT format,
 25. ```terraform plan -target={resource}``` will only run the resource related tasks for .e.g ```terraform plan -target=ec2``` will only run the tasks related to ec2 across all the tf file in the workspace
 26. **zipmap function**: constructs a map from a list of keys and a corresponding list of
 values, For e.g. see [this](./zipmap.tf) example
-27. 
+27. **Data Type - SET**: For e.g. [this]() file,
+    1. Lists are used to store multiple items in a single variable,
+    2. List items are ordered, changeable, and allow duplicate values,
+    3. List items are indexed, the first item has index [0], the second item has index [1]etc.
+    4. SET is used to store multiple items in a single variable,
+    5. SET items are unordered and no duplicates allowed,
+    6. *toset function* will convert the list of values to SET
+28. 
