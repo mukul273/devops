@@ -52,7 +52,7 @@ different resource,
        8. IP Network
        9. Type Conversion 
     2. Please refer [this](./functions.tf) file
-16. **Data sources**: allow data to be fetched or computed for use elsewhere in Terraform configuration. Please refer [this](./datasources.tf) file. If you need to find more details related to options that can be used in filters, you can refer to the following AWS documentation: 
+16. **Data sources**: allow data to be fetched or computed for use elsewhere in Terraform configuration. Please refer [this](./datasources.tf) file. If you need to find more details related to options that can be used in filters, you can refer to the following AWS documentation:
 https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html
 Refer to the --filters option
 17. **Dynamic Blocks**: Dynamic Block allows us to dynamically construct repeatable nested blocks which is supported inside resource, data, provider, and provisioner blocks
@@ -61,8 +61,12 @@ Refer to the --filters option
 18. If we use ```terraform apply -replace="aws_instance.{resource}``` then the terraform takes care of taint functionality offered by terraform, {resource} to be replaced with actual resource name, ```terraform taint``` can be used in older terraform versions,
 19. **Splat Expression**: allows us to get a list of all the attributes, see [this](splat.tf) file
 20. ```terraform graph```: command is used to generate a visual representation of either a
-configuration or execution plan, output of terraform graph is in the DOT format, which can easily be converted to an image, Please see [this dot file](./graph.tf) and [this file](./graph.dot)] for visual graph. Please remember to install graphviz extension for dot files preview in vscode,
+configuration or execution plan, output of terraform graph is in the DOT format, which can easily be converted to an image, Please see [this dot file](./graph.tf) and [this file](./graph.dot) for visual graph. Please remember to install graphviz extension for dot files preview in vscode,
 21. **Saving the terraform plan to a file**: ```terraform plan -out={to be replaced with path}```, For e.g. ```terraform plan -out=demopath```, this will create a demopath file and then you can ```terraform apply demopath``` on it so that saved plan can be applied,
 22. ```terraform output``` command is used to extract the value of an output variable from the state file, for e.g. ```terraform output iam_names```
 23. Please refer [this](./terraform_settings_demo.tf) for terraform settings description,
-24. 
+24. ```terraform plan -refresh=false``` will not refresh the tfstate file
+25. ```terraform plan -target={resource}``` will only run the resource related tasks for .e.g ```terraform plan -target=ec2``` will only run the tasks related to ec2 across all the tf file in the workspace
+26. **zipmap function**: constructs a map from a list of keys and a corresponding list of
+values, For e.g. see [this](./zipmap.tf) example
+27. 
