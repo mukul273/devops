@@ -5,4 +5,10 @@
 3. **Locals**: When we don't want project level code (variables defined at module level) override the values and at the same time we also do not want to hardcode the repetitive values we should use locals,
 4. **Module Outputs**: Output values make information about your infrastructure available on the command line, and can expose information for other Terraform configurations to use, Please check these [files](../projects/modules_output_demo.tf),
 5. In a parent module, outputs of child modules are available in expressions as ```module.<MODULE NAME>.<OUTPUT NAME>```,
-6. 
+6. If we intend to use a module, we need to define the path where the module files are present
+   1. Local Path
+   2. GitHub
+   3. Terraform Registry
+   4. S3 Bucket
+   5. HTTP URLs
+7. 
