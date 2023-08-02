@@ -14,3 +14,8 @@ The blue verification badge appears next to modules that are verified
 Module verification is currently a manual process restricted to a small group of trusted
 HashiCorp partners.
 
+## Publishing Modules
+![publishing modules](publishing_modules.png)
+
+## Standard Module structure
+![standard Module Structure](standard_module_structure.png)
