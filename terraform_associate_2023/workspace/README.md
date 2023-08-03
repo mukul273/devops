@@ -7,4 +7,3 @@ Terraform allows us to have multiple workspaces, with each of the workspace we c
     4.  ```terraform workspace -h```  
     5.  ```terraform workspace show```  
     6.  ```terraform workspace new dev``` OR ```terraform workspace new {workspacename}```  
-    7.  
