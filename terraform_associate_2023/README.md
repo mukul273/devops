@@ -33,17 +33,10 @@ There are more IDE's like ATOM or sublime too.
 
 6. Your ec2 instance should be created now (wait for it to be created and in running stage to verify in aws EC2 dashboard)
 7. `terraform destroy -target github_repository.example`  is an example to destroy specific github resource
-   
+
 ## Read, Generate and Modify Configurations
+
 1. [Read, Generate, Modify](/terraform_associate_2023/Read_generate_modify_conf/)
-
-
-
-
-
-
-
-
 
 ### footnotes
 
@@ -73,4 +66,8 @@ changes necessary to achieve the desired state,
 23. Try ```terraform validate``` to validate the configuration is syntactically valid, It checks for unsupported args, undeclared vars etc, **```terraform plan``` also runs the ```terraform validate``` in the background first**
 24. **Terraform always loads the configuration in alphabetical order**
 25. **Terraform files have to be in .tf or .tf.json extension**
-26. 
+26. **HashiCorp Vault**
+    1. HashiCorp Vault allows organizations to securely store secrets like tokens, passwords, certificates along with access management for protecting secrets,
+    2. Secrets can include, database passwords, AWS access/secret keys, API Tokens, encryption keys and others,
+    3. Refer this [file](./security/vault.tf) for example
+27. EOF
