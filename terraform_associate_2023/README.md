@@ -70,4 +70,11 @@ changes necessary to achieve the desired state,
     1. HashiCorp Vault allows organizations to securely store secrets like tokens, passwords, certificates along with access management for protecting secrets,
     2. Secrets can include, database passwords, AWS access/secret keys, API Tokens, encryption keys and others,
     3. Refer this [file](./security/vault.tf) for example
-27. EOF
+27. Please use ```terraform init -upgrade``` to match the terraform version that is intended to be used,
+28. **Sentinel** is a policy-as-code framework integrated with the HashiCorp Enterprise products
+    1. It enables fine-grained, logic-based policy decisions, and can be extended to use information
+from external sources
+    2. Please refer [this](./workspace/sentinel.tf) file for sentinel demo
+    3. Additional dcumentation: [https://www.terraform.io/cloud-docs/sentinel/examples](https://www.terraform.io/cloud-docs/sentinel/examples)
+
+29. EOF
