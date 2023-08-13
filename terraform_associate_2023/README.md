@@ -76,4 +76,6 @@ changes necessary to achieve the desired state,
     2. Please refer [this](./workspace/sentinel.tf) file for sentinel demo
     3. Additional dcumentation: [https://www.terraform.io/cloud-docs/sentinel/examples](https://www.terraform.io/cloud-docs/sentinel/examples)
 
-29. EOF
+29. An **air gap** is a network security measure employed to ensure that a secure computer network is physically isolated from unsecured networks, such as the public Internet.
+    1. Air Gapped Environments are used in various areas. Some of these include Military/governmental computer networks/systems, Financial computer systems, such as stock exchanges
+30. EOF
