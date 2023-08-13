@@ -69,11 +69,15 @@ configuration or execution plan, output of terraform graph is in the DOT format,
 25. ```terraform plan -target={resource}``` will only run the resource related tasks for .e.g ```terraform plan -target=ec2``` will only run the tasks related to ec2 across all the tf file in the workspace
 26. **zipmap function**: constructs a map from a list of keys and a corresponding list of
 values, For e.g. see [this](./zipmap.tf) example
-27. **Data Type - SET**: For e.g. [this]() file,
+27. **Data Type - SET**: For e.g. [this](./dynamic_block.tf) file,
     1. Lists are used to store multiple items in a single variable,
     2. List items are ordered, changeable, and allow duplicate values,
     3. List items are indexed, the first item has index [0], the second item has index [1]etc.
     4. SET is used to store multiple items in a single variable,
     5. SET items are unordered and no duplicates allowed,
     6. *toset function* will convert the list of values to SET
-28. 
+28. **Ignore changes**: Please refer [this](./ignore_changes.tf) for ignoring the changes those were made manually to the underlying resources. This behavior is also called meta arguments,
+29. **Create before Destroy** meta argument demo: Please refer [this](./create_before_destroy_meta.tf) file
+30. **Present Destroy** meta argument: Please refer [this](./prevent_destroy_meta.tf) file,
+31. 
+32. EOF
