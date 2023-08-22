@@ -2,7 +2,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-variable "istest" {}
+//variable "istest" {}
 
 resource "aws_instance" "dev" {
   ami           = "ami-082b5a644766e0e6f"
