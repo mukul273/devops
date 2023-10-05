@@ -28,3 +28,14 @@ Default output format [None]: json
 ## Install kubectl CLI
 
 [Install kubectl](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)
+
+## Install EKSCTL CLI
+
+[Install eksctl](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html)
+
+## AWS EKS Core Objects
+
+![AWS EKS Core Objects](./assets/AWS_eks_core_objects.png)
+
+![How eks works](./assets/how_eks_works.png)
+
